@@ -1,0 +1,12 @@
+<div class="header-wrapper">
+  <div class="flex-row space-between nowrap">
+    <div class="title">{{title}}</div>
+    <div class="links">
+      <ul>
+        <li *ngFor="let item of states">
+          <app-router-link [state]="item.state" [text]="item.text"></app-router-link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

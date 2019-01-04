@@ -1,0 +1,21 @@
+{
+  "title": "Smolovyk Ruslan",
+  "states": [
+    {
+      "state": "about",
+      "text": "About"
+    },
+    {
+      "state": "skills",
+      "text": "Skills"
+    },
+    {
+      "state": "experience",
+      "text": "Experience"
+    },
+    {
+      "state": "education",
+      "text": "Education"
+    }
+  ]
+}
