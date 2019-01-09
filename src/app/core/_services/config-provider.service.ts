@@ -1,14 +1,13 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {environment} from '../../../environments/environment';
-
+import {environment} from '@env/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigProviderService {
-  private configUrl = 'assets/config.json';
+  private configUrl = `${environment.baseUrl}config.json`;
 
   constructor(private http: HttpClient) {
 

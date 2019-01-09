@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
-import {IStates} from '../../../core/_interfaces/interfaces';
-import {ConfigProviderService} from '../../../core/_services';
+import {IStates} from '@app/core/_interfaces/interfaces';
+import {ConfigProviderService} from '@app/core/_services';
 
 @Component({
   selector: 'app-header',
