@@ -6,14 +6,13 @@ import {environment} from '@env/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ConfigProviderService {
-  private configUrl = `${environment.baseUrl}config.json`;
+export class DataProviderService {
 
   constructor(private http: HttpClient) {
-
   }
 
-  getConfig() {
-    return this.http.get(this.configUrl);
+  getData(url) {
+    const dataUrl = environment.baseUrl + url;
+    return this.http.get(dataUrl);
   }
 }
